@@ -1,0 +1,80 @@
+/* Color principal de la marca (Violeta) */
+.navbar-custom {
+    background-color: blueviolet;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+/* --- ESTILO DE LOS BOTONES DEL MENÚ --- */
+
+/* Estado Normal: Texto blanco */
+.navbar-custom .nav-link {
+    color: rgb(255, 255, 255) !important;
+    margin: 0 5px; /* Un poco de separación entre botones */
+    padding: 8px 15px !important; /* Espacio interno para formar la cajita */
+    border-radius: 10px; /* Bordes redondeados */
+    transition: all 0.3s ease; /* Suavidad al cambiar de color */
+}
+
+/* Estado Hover: Cuando pasas el mouse (Fondo oscuro) */
+.navbar-custom .nav-link:hover {
+    background-color: rgba(0, 0, 0, 0.4); /* Fondo negro semitransparente (tipo plomo oscuro) */
+    color: #ffffff !important; /* Texto blanco brillante */
+    transform: translateY(-2px); /* Se levanta un poquito */
+    font-weight: bold;
+}
+
+/* Estado Activo: El botón donde estás actualmente */
+.navbar-custom .nav-link.active {
+    background-color: rgba(0, 0, 0, 0.2); /* Un fondo un poco más suave */
+    font-weight: bold;
+    border: 1px solid rgba(255,255,255,0.3); /* Un borde fino */
+}
+
+/* Quitar el triángulo del dropdown si lo hubiera */
+.nav-link.dropdown-toggle::after {
+    display: none;
+}
+
+/* CARRUSEL ... (El resto del código sigue igual hacia abajo) */
+
+/* Quitar el triángulo del dropdown si lo hubiera */
+.nav-link.dropdown-toggle::after {
+    display: none;
+}
+
+/* CARRUSEL: Altura fija para que no salte la página */
+.carousel-item img {
+    height: 550px;
+    object-fit: cover;
+    filter: brightness(0.9); /* Un poco oscuro para que el texto resalte */
+}
+
+/* Títulos de secciones */
+.section-padding {
+    padding: 80px 0;
+}
+
+.text-custom {
+    color: blueviolet;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* --- ANIMACIONES DE LAS TARJETAS (MOVIMIENTO) --- */
+.product-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: none;
+}
+
+/* Cuando pasas el mouse, la tarjeta flota */
+.product-card:hover {
+    transform: translateY(-10px); /* Sube 10 pixeles */
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2) !important;
+    cursor: pointer;
+}
+
+/* Ajustes de botones */
+.btn-comprar {
+    border-radius: 20px;
+}
